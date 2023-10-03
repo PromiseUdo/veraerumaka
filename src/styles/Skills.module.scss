@@ -18,11 +18,27 @@
       height: 3rem;
       width: 3rem;
       margin-right: 2rem;
+      @media screen and (max-width: 480px) {
+        height: 2.25rem;
+        width: 2.25rem;
+      }
     }
 
     .skillBarText > p {
       font-size: 0.9rem;
       font-weight: 200;
+
+      @media screen and (max-width: 720px) {
+        font-size: 2vw;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 3vw;
+      }
+    }
+    .skillBarText > h2 {
+      @media screen and (max-width: 480px) {
+        font-size: 5vw;
+      }
     }
   }
 }

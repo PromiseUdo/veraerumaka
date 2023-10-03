@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import "./colors";
 * {
   margin: 0;
   padding: 0;
@@ -14,40 +15,8 @@
 }
 
 body {
-  background: rgb(30, 30, 30);
+  background: $color-darkest;
   color: white;
   overflow: hidden;
   overflow-y: scroll;
-}
-
-//COLOR DARK
-.dark {
-  --color-dark: #060606;
-  --color-darker: rgba(0, 0, 0, 0.95);
-  --color-darkest: black;
-  --color-white: white;
-  --color-gray-100: #acacac;
-  --color-gray-200: #1e1e1e;
-  --color-gray-300: #0f0f11;
-  --color-svg-dark: var(--color-white);
-  --color-svg-light: white;
-  --color-nav: var(--color-white);
-  --color-border-dark: rgb(54, 54, 54);
-  --shadow-primary: 0 0 20px 5px rgba(251, 83, 67, 0.2);
-  --color-primary: #059dff;
-  --color-primary-dark: #011827;
-  --color-tertiary: #6549d5;
-  --color-tertiary-dark: #150b40;
-  --color-pink: #e33fa1;
-  --color-pink-dark: #2f011d;
-  --color-secondary: #fb4323;
-  --color-secondary-dark: #190301;
-  --color-gradient-1: linear-gradient(
-      95deg,
-      var(--color-white) 15%,
-      var(--color-gray-100) 45%,
-      var(--color-white) 75%,
-      var(--color-white) 100%
-    )
-    95%/200% 1000%;
 }

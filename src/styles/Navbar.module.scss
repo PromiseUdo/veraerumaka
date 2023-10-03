@@ -1,9 +1,11 @@
+@import "../colors";
 .navbar {
+  background: $color-darkest;
   height: 5rem;
   width: 100vw;
-  max-width: 75rem;
+  // max-width: 75rem;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

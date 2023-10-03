@@ -1,11 +1,21 @@
+import {
+  GradientCircleMd,
+  GradientCircleTop,
+} from "./components/GradientCircle";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Intro />
+      <main>
+        <GradientCircleTop />
+        <GradientCircleMd />
+        <Intro />
+        <Skills />
+      </main>
     </div>
   );
 }

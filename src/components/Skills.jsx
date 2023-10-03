@@ -14,13 +14,13 @@ const Skills = () => {
       id="skills"
     >
       <div className={styles.skillBars}>
-        <div className={styles.skillBar}>
+        {/* <div className={styles.skillBar}>
           <img className={styles.skillBarImg} src={UIDesign} alt="ui design" />
           <div className={styles.skillBarText}>
             <h2>Product Design</h2>
             <p> I have excellent experience desigining websites and web</p>
           </div>
-        </div>
+        </div> */}
         <div className={styles.skillBar}>
           <img
             className={styles.skillBarImg}

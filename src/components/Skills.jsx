@@ -10,7 +10,7 @@ const Skills = () => {
       className={styles.skills}
       title="Learn More About Me"
       subtitle="What I do"
-      description="I am a skilled and passionate Product Designer with experience in creating visually appealing and user-friendly website and app designs. I have a strong understanding of design and a keen eye for detail."
+      description="I am a skilled and passionate Product Designer with experience in creating visually appealing and user-friendly website and app designs."
       id="skills"
     >
       <div className={styles.skillBars}>

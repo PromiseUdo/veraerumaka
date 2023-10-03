@@ -6,7 +6,7 @@ const Works = () => {
       className={styles.works}
       title="Some of my projects"
       subtitle="My Projects"
-      description="I take pride in paying attention to the smallest details and making sure that my work is pixel perfect. I am excited to bring my skills and experience to help businesses achieve their goals and create a strong online presence."
+      description="I take pride in paying attention to the smallest details and making sure that my work is pixel perfect."
       id="skills"
     >
       Works

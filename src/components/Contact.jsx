@@ -15,9 +15,15 @@ const Contact = () => {
     >
       <div className={styles.container}>
         <form className={styles.contactForm}>
-          <input type="text" className={styles.name} placeholder="Your Name" />
+          <input
+            type="text"
+            name="name"
+            className={styles.name}
+            placeholder="Your Name"
+          />
           <input
             type="email"
+            name="email"
             className={styles.email}
             placeholder="Your Email"
           />

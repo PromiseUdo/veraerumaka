@@ -17,7 +17,8 @@
     width: 20rem;
     height: auto;
     object-fit: contain;
-
+    border-radius: 50%;
+    border: 0.2rem solid yellow;
     @media screen and (max-width: 480px) {
       // right: -20vw;
       width: 13rem;

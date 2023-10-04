@@ -2,6 +2,8 @@ import styles from "../styles/Intro.module.scss";
 import Section from "./Section";
 import bg from "../assets/vera.png";
 import btnImg from "../assets/hireme.png";
+import DownloadIcon from "../assets/download.png";
+import SuitcaseIcon from "../assets/suitcase.png";
 import { Link } from "react-scroll";
 const Intro = () => {
   return (
@@ -16,11 +18,21 @@ const Intro = () => {
           I am a skilled product designer with experience in creating <br />
           visually appealing and user friendly designs.
         </p>
-        <Link>
-          <button className={styles.btn}>
-            <img className={styles.btnImg} src={btnImg} alt="hire me" /> Hire Me
-          </button>
-        </Link>
+
+        <div className={styles.actions}>
+          <Link>
+            <button className={styles.hire}>
+              <img className={styles.btnImg} src={btnImg} alt="hire me" />
+              <span> Hire Me</span>
+            </button>
+          </Link>
+          <Link>
+            <button className={styles.resume}>
+              <img className={styles.btnImg} src={DownloadIcon} alt="hire me" />
+              <span> Download CV</span>
+            </button>
+          </Link>
+        </div>
       </div>
       <img src={bg} alt="profile picture" className={styles.bg} />
     </Section>

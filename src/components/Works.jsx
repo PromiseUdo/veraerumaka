@@ -21,8 +21,6 @@ const Works = () => {
           <img src={Portfolio2} alt="worksImg" className={styles.worksImg} />
           <img src={Portfolio3} alt="worksImg" className={styles.worksImg} />
           <img src={Portfolio4} alt="worksImg" className={styles.worksImg} />
-          <img src={Portfolio5} alt="worksImg" className={styles.worksImg} />
-          <img src={Portfolio6} alt="worksImg" className={styles.worksImg} />
         </div>
         <a
           target="_blank"

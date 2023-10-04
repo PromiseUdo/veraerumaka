@@ -24,8 +24,9 @@
       flex-wrap: wrap;
       .worksImg {
         object-fit: cover;
-        height: 20rem;
-        // width: 20rem;
+        object-position: center;
+        height: 15rem;
+        width: 15rem;
         // max-width: 16rem;
         margin: 0.5rem;
 

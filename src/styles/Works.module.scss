@@ -28,6 +28,7 @@
         height: 15rem;
         width: 15rem;
         margin: 0.5rem;
+        border: 1px solid $color-border-dark;
 
         @media screen and (max-width: 585px) {
           height: 48vw;

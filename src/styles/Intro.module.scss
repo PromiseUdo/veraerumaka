@@ -1,3 +1,4 @@
+@import "../colors";
 .intro {
   height: calc(100vh - 4rem);
   width: 100vw;
@@ -40,10 +41,17 @@
         font-size: 4.5vw;
       }
     }
-    .introName {
-      color: yellow;
-      @media screen and (max-width: 840px) {
-        font-size: 10vw;
+    .introText {
+      background: $color-gradient-1;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      .introName {
+        color: yellow;
+        background: none !important;
+        @media screen and (max-width: 840px) {
+          font-size: 10vw;
+        }
       }
     }
 
@@ -54,7 +62,8 @@
     }
 
     .btn {
-      background: white;
+      background: $color-gradient-1;
+      color: $color-white;
       margin: 1rem 0;
       padding: 0.75rem 1.5rem;
       border: none;

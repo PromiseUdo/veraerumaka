@@ -13,7 +13,7 @@ const Works = () => {
       title="Some of my projects"
       subtitle="My Projects"
       description="I take pride in paying attention to the smallest details and making sure that my work is pixel perfect."
-      id="skills"
+      id="works"
     >
       <div className={styles.container}>
         <div className={styles.worksImgs}>

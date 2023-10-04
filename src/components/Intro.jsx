@@ -53,7 +53,10 @@ const Intro = () => {
           </a>
         </div>
       </div>
-      <img src={bg} alt="profile picture" className={styles.bg} />
+      <div className={styles.illustration}>
+        <img src={bg} alt="profile picture" className={styles.bg} />
+        <span className={styles.circleSpin}></span>
+      </div>
     </Section>
   );
 };

@@ -27,7 +27,19 @@
         height: 20rem;
         width: 20rem;
         margin: 0.5rem;
+
+        @media screen and (max-width: 585px) {
+          height: 48vw;
+        }
       }
+    }
+    .btn {
+      margin: 3rem 0;
+
+      padding: 0.5rem 2.5rem;
+      background: white;
+      border-radius: 2rem;
+      font-size: 1rem;
     }
   }
 }

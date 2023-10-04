@@ -24,6 +24,12 @@ const Works = () => {
           <img src={Portfolio5} alt="worksImg" className={styles.worksImg} />
           <img src={Portfolio6} alt="worksImg" className={styles.worksImg} />
         </div>
+        <a
+          target="_blank"
+          href="https://www.behance.net/4053cadfverauchenna/projects"
+        >
+          <button className={styles.btn}>See More</button>
+        </a>
       </div>
     </Section>
   );

@@ -20,18 +20,24 @@ const Intro = () => {
         </p>
 
         <div className={styles.actions}>
-          <Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
             <button className={styles.hire}>
               <img className={styles.btnImg} src={btnImg} alt="hire me" />
               <span> Hire Me</span>
             </button>
           </Link>
-          <Link>
+          <a href="/resume/vera_erumaka_cv.pdf" download>
             <button className={styles.resume}>
               <img className={styles.btnImg} src={DownloadIcon} alt="hire me" />
               <span> Download CV</span>
             </button>
-          </Link>
+          </a>
         </div>
       </div>
       <img src={bg} alt="profile picture" className={styles.bg} />

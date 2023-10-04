@@ -23,7 +23,7 @@ const Intro = () => {
               1000,
             ]}
             wrapper="span"
-            speed={50}
+            speed={10}
             repeat={Infinity}
           />
         </span>

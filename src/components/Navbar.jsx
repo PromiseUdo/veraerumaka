@@ -28,7 +28,7 @@ const Navbar = () => {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className={styles.desktopMenuListItem}
           >
@@ -37,10 +37,10 @@ const Navbar = () => {
 
           <Link
             activeClass={styles.active}
-            to=""
+            to="works"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className={styles.desktopMenuListItem}
           >
@@ -48,43 +48,35 @@ const Navbar = () => {
           </Link>
           <Link
             activeClass={styles.active}
-            to="works"
+            to="experience"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className={styles.desktopMenuListItem}
           >
             Experience
           </Link>
-          <Link
-            activeClass={styles.active}
-            to=""
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            className={styles.desktopMenuListItem}
-          >
-            Clients
-          </Link>
         </div>
-        {/*  onClick={()=> {
-        document.getElementById('contact').scrollIntoView({behavior:'smooth'})
-      }} */}
-        <button className={styles.desktopMenuBtn}>
+
+        <button
+          onClick={() => {
+            document
+              .getElementById("contact")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+          className={styles.desktopMenuBtn}
+        >
           <img src={contactImg} alt="" className={styles.desktopMenuImg} />
           Contact Me
         </button>
 
-        <Link href="/">
-          <img
-            onClick={() => setShowMenu(!showMenu)}
-            className={styles.mobileMenu}
-            src={menu}
-            alt="menu"
-          />
-        </Link>
+        <img
+          onClick={() => setShowMenu(!showMenu)}
+          className={styles.mobileMenu}
+          src={menu}
+          alt="menu"
+        />
         <div
           className={styles.navMenu}
           style={{ display: showMenu ? "flex" : "none" }}
@@ -107,7 +99,7 @@ const Navbar = () => {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className={styles.listItem}
           >
@@ -117,10 +109,10 @@ const Navbar = () => {
           <Link
             onClick={() => setShowMenu(false)}
             activeClass={styles.active}
-            to=""
+            to="works"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className={styles.listItem}
           >
@@ -129,34 +121,23 @@ const Navbar = () => {
           <Link
             onClick={() => setShowMenu(false)}
             activeClass={styles.active}
-            to="works"
+            to="experience"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className={styles.listItem}
           >
             Experience
           </Link>
+
           <Link
             onClick={() => setShowMenu(false)}
             activeClass={styles.active}
-            to=""
+            to="contact"
             spy={true}
             smooth={true}
-            offset={-100}
-            duration={500}
-            className={styles.listItem}
-          >
-            Clients
-          </Link>
-          <Link
-            onClick={() => setShowMenu(false)}
-            activeClass={styles.active}
-            to=""
-            spy={true}
-            smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className={styles.listItem}
           >

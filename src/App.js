@@ -1,3 +1,5 @@
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import {
   GradientCircleMd,
   GradientCircleTop,
@@ -17,6 +19,8 @@ function App() {
         <Intro />
         <Skills />
         <Works />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );

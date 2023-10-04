@@ -1,0 +1,64 @@
+@import "../colors";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  .contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+
+    .name,
+    .email,
+    .message {
+      font-size: medium;
+      width: 100%;
+      max-width: 40rem;
+      margin: 0.5rem;
+      height: 45px;
+
+      padding: 0.5rem 1rem;
+      color: $color-gray-100;
+      border: none;
+      outline: none;
+      transition: all 0.2s ease;
+      box-shadow: inset 1px 4px 2px -3px rgba(0, 0, 0, 0.7),
+        inset -1px -3px 3px -2px hsla(0, 0%, 100%, 0.2);
+      background: $color-gray-200;
+      border-radius: 0.5rem;
+    }
+
+    .message {
+      min-height: 150px;
+      padding: 10px 15px;
+      resize: none;
+    }
+
+    .submitBtn {
+      background: white;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.75rem 3.5rem;
+      margin: 2rem;
+    }
+  }
+
+  .socialProfiles {
+    display: flex;
+    flex-wrap: wrap;
+    .link {
+      object-fit: cover;
+      height: 3rem;
+      width: 3rem;
+      margin: 0 0.4rem;
+    }
+  }
+}

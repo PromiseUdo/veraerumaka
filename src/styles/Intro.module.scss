@@ -42,13 +42,9 @@
       }
     }
     .introText {
-      background: $color-gradient-1;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
       .introName {
         color: yellow;
-        background: none !important;
+        background: transparent;
         @media screen and (max-width: 840px) {
           font-size: 10vw;
         }

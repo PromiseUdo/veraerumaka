@@ -5,6 +5,7 @@ import btnImg from "../assets/hireme.png";
 import DownloadIcon from "../assets/download.png";
 import SuitcaseIcon from "../assets/suitcase.png";
 import { Link } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
 const Intro = () => {
   return (
     <Section id="intro" className={styles.intro}>
@@ -12,7 +13,19 @@ const Intro = () => {
         <span className={styles.hello}>Hello,</span>
         <span className={styles.introText}>
           I&apos;m <span className={styles.introName}>Vera Erumaka</span> <br />
-          Product Designer
+          <TypeAnimation
+            sequence={[
+              "Product Designer",
+              1000,
+              "Instructor",
+              1000,
+              "Creative Thinker",
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+          />
         </span>
         <p className={styles.introPara}>
           I am a skilled product designer with experience in creating <br />

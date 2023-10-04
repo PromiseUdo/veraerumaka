@@ -48,8 +48,11 @@
 
     .desktopMenuBtn {
       border: none;
-      background: #fff;
-      color: black;
+      background: $color-gradient-1;
+      color: $color-white;
+      letter-spacing: 0.5px;
+      transition: all ease-in-out 200ms;
+      text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;

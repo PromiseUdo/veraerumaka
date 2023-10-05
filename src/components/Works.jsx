@@ -9,31 +9,35 @@ import { AiOutlineLink } from "react-icons/ai";
 const projectsData = [
   {
     id: 1,
+    link: "https://www.behance.net/gallery/174755889/Online-Book-Keeping-Inventory-Management-System",
     title: "LogiKeep Web App",
-    description: "Dashboard Design",
+    description: "Book-keeping App",
     image: Portfolio1,
   },
   {
     id: 2,
+    link: "https://www.behance.net/gallery/181501163/logistics-admin-page?tracking_source=project_owner_other_projects",
     title: "Afrimail Web App",
     description: "Logistics Mgmt App",
     image: Portfolio2,
   },
   {
     id: 3,
-    title: "LogiKeep Web App",
-    description: "Auth Screen Design",
+    link: "https://www.behance.net/gallery/166513147/Bank-application-for-mobile-device",
+    title: "ARLBank Mobile App",
+    description: "Bank Application",
     image: Portfolio3,
   },
   {
     id: 4,
+    link: "https://www.behance.net/gallery/178472589/Event-Management-Application?tracking_source=project_owner_other_projects",
     title: "Credib Mobile App",
     description: "Event Planning App",
     image: Portfolio4,
   },
 ];
 
-const ProjectCard = ({ imgUrl, title, description }) => {
+const ProjectCard = ({ imgUrl, title, link, description }) => {
   return (
     <div className={styles.cardContainer}>
       <div
@@ -45,7 +49,7 @@ const ProjectCard = ({ imgUrl, title, description }) => {
         className={styles.cardInner}
       >
         <div className={styles.overlay}>
-          <a href="/" className={styles.linkWrapper}>
+          <a href={link} target="_blank" className={styles.linkWrapper}>
             <AiOutlineLink className={styles.linkIcon} />
           </a>
         </div>
@@ -72,40 +76,12 @@ const Works = () => {
           {projectsData.map((project, idx) => (
             <ProjectCard
               key={idx}
+              link={project.link}
               title={project.title}
               description={project.description}
               imgUrl={project.image}
             />
           ))}
-
-          {/* <div className={styles.portfolioWrap}>
-            <img src={Portfolio1} alt="worksImg" className={styles.worksImg} />
-            <div className={styles.portfolioInfo}>
-              <h4>LogiKeep Web app</h4>
-              <p>Dashboard</p>
-            </div>
-          </div>
-          <div className={styles.portfolioWrap}>
-            <img src={Portfolio2} alt="worksImg" className={styles.worksImg} />
-            <div className={styles.portfolioInfo}>
-              <h4>Afrimail Web app</h4>
-              <p>Dashboard</p>
-            </div>
-          </div>
-          <div className={styles.portfolioWrap}>
-            <img src={Portfolio3} alt="worksImg" className={styles.worksImg} />
-            <div className={styles.portfolioInfo}>
-              <h4>Logikeep Web app</h4>
-              <p>Auth Screen</p>
-            </div>
-          </div>
-          <div className={styles.portfolioWrap}>
-            <img src={Portfolio4} alt="worksImg" className={styles.worksImg} />
-            <div className={styles.portfolioInfo}>
-              <h4>Credib Mobile app</h4>
-              <p>Task Screen</p>
-            </div>
-          </div> */}
         </div>
         <a
           target="_blank"

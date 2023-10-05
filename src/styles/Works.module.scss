@@ -67,11 +67,14 @@
             transition: all 0.5s ease 0s;
             z-index: 99999;
           }
+
+          &::after {
+          }
         }
       }
     }
     .btn {
-      margin: 3rem 0;
+      margin-top: 6rem;
 
       padding: 0.5rem 2.5rem;
       background: $color-gradient-1;
@@ -79,5 +82,103 @@
       border-radius: 2rem;
       font-size: 1rem;
     }
+  }
+}
+
+.cardContainer {
+  height: 15rem;
+  width: 15rem;
+  margin: 0.5rem;
+  @media screen and (max-width: 585px) {
+    height: 48vw;
+  }
+}
+
+.cardInner {
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  // margin: 0 0.5rem;
+  // border: 2px solid $color-border-dark;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  &:hover .overlay {
+    display: flex;
+    visibility: visible;
+    opacity: 0.8;
+    transition: all ease 0.2s;
+  }
+}
+
+.cardText {
+  background: $color-dark;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  // margin-top: 0.75rem;
+}
+
+.cardText > h5 {
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: $color-gray-100;
+
+  // margin-bottom: 0.5rem;
+}
+.cardText > p {
+  font-weight: 300;
+  font-size: 0.6rem;
+  color: $color-gray-100;
+  // margin-bottom: 0.5rem;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 150, 0.3),
+    rgba(255, 0, 150, 0.3)
+  );
+}
+
+// .cardInner:hover .overlay {
+//   display: flex;
+//   visibility: visible;
+//   opacity: 0.8;
+//   transition: all ease 0.5s;
+// }
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.15rem solid black;
+  position: relative;
+  border-radius: 9999px;
+  height: 2.5rem;
+  width: 2.5rem;
+  &:hover {
+    border-color: $color-gray-200;
+  }
+}
+.linkIcon {
+  margin: 0.5rem;
+  color: $color-darkest;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  &:hover {
+    color: $color-gray-200;
   }
 }

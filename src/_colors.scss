@@ -28,3 +28,11 @@ $color-gradient-1: linear-gradient(
     $color-secondary 100%
   )
   95%/200% 1000%;
+$color-gradient-2: linear-gradient(
+    95deg,
+    $color-primary 35%,
+    $color-tertiary 55%,
+    $color-pink 95%,
+    $color-secondary 100%
+  )
+  90%/120% 1000%;

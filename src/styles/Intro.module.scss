@@ -135,6 +135,10 @@
       }
       .hire {
         background: $color-gradient-1;
+        transition: all ease 0.5s;
+        &:hover {
+          background: $color-gradient-2;
+        }
       }
       .resume {
         background: transparent;

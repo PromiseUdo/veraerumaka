@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
-        <Link to="intro" spy={true} smooth={true} duration={500}>
+        <Link to="/" spy={true} smooth={true} duration={500}>
           <img className={styles.logo} src="/logo2.svg" alt="site logo" />
         </Link>
         <div className={styles.desktopMenu}>

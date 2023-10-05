@@ -23,8 +23,8 @@ const Skills = () => {
           <div className={styles.skillBarText}>
             <h2>Website Design</h2>
             <p>
-              I have excellent experience desigining websites and web
-              applications
+              I specialize in crafting user-centered website experiences, I
+              design intuitive interfaces that engage and delight visitors.
             </p>
           </div>
         </div>
@@ -37,7 +37,8 @@ const Skills = () => {
           <div className={styles.skillBarText}>
             <h2>Mobile App Design</h2>
             <p>
-              I have experience designing intuitive mobile app user interfaces
+              I have experience in crafting user-friendly and visually appealing
+              mobile interfaces that captivate and engage users.
             </p>
           </div>
         </div>

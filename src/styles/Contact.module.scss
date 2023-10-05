@@ -66,6 +66,10 @@
       width: 3rem;
       margin: 0 0.4rem;
       color: $color-gray-100;
+      @media screen and (max-width: 720px) {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
       &:hover {
         color: $color-border-dark;
       }

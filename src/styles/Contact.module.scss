@@ -42,6 +42,9 @@
     }
 
     .submitBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: $color-gradient-1;
       border: none;
       border-radius: 2rem;
@@ -65,7 +68,6 @@
       margin: 1rem;
     }
     .link {
-      object-fit: cover;
       height: 3rem;
       width: 3rem;
       margin: 0 0.4rem;

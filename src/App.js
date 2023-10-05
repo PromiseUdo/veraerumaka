@@ -9,10 +9,13 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Works from "./components/Works";
 import "./app.scss";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <div>
+      <ToastContainer />
       <Navbar />
       <main className="main">
         <GradientCircleTop />

@@ -1,12 +1,11 @@
 @import "../colors";
 .intro {
-  // height: calc(100vh - 4rem);
   width: 100%;
   max-width: 75rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 3.5rem;
+  gap: 3rem;
   overflow: hidden;
   @media screen and (max-width: 1000px) {
     flex-direction: column-reverse;
@@ -31,11 +30,9 @@
       border: 0.1rem solid yellow;
 
       @media screen and (max-width: 840px) {
-        // right: -10vw;
         width: 15rem;
       }
       @media screen and (max-width: 480px) {
-        // right: -20vw;
         width: 13rem;
       }
     }

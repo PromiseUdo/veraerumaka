@@ -16,10 +16,34 @@ const Works = () => {
     >
       <div className={styles.container}>
         <div className={styles.worksImgs}>
-          <img src={Portfolio1} alt="worksImg" className={styles.worksImg} />
-          <img src={Portfolio2} alt="worksImg" className={styles.worksImg} />
-          <img src={Portfolio3} alt="worksImg" className={styles.worksImg} />
-          <img src={Portfolio4} alt="worksImg" className={styles.worksImg} />
+          <div className={styles.portfolioWrap}>
+            <img src={Portfolio1} alt="worksImg" className={styles.worksImg} />
+            <div className={styles.portfolioInfo}>
+              <h4>LogiKeep Web app</h4>
+              <p>Dashboard</p>
+            </div>
+          </div>
+          <div className={styles.portfolioWrap}>
+            <img src={Portfolio2} alt="worksImg" className={styles.worksImg} />
+            <div className={styles.portfolioInfo}>
+              <h4>Afrimail Web app</h4>
+              <p>Dashboard</p>
+            </div>
+          </div>
+          <div className={styles.portfolioWrap}>
+            <img src={Portfolio3} alt="worksImg" className={styles.worksImg} />
+            <div className={styles.portfolioInfo}>
+              <h4>Logikeep Web app</h4>
+              <p>Auth Screen</p>
+            </div>
+          </div>
+          <div className={styles.portfolioWrap}>
+            <img src={Portfolio4} alt="worksImg" className={styles.worksImg} />
+            <div className={styles.portfolioInfo}>
+              <h4>Credib Mobile app</h4>
+              <p>Task Screen</p>
+            </div>
+          </div>
         </div>
         <a
           target="_blank"

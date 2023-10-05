@@ -74,7 +74,7 @@
       }
     }
     .btn {
-      margin-top: 6rem;
+      margin-top: 4rem;
 
       padding: 0.5rem 2.5rem;
       background: $color-gradient-1;
@@ -86,18 +86,18 @@
 }
 
 .cardContainer {
-  height: 15rem;
+  height: 18rem;
   width: 15rem;
   margin: 0.5rem;
   @media screen and (max-width: 585px) {
-    height: 48vw;
+    margin-bottom: 0.7rem;
   }
 }
 
 .cardInner {
   position: relative;
 
-  height: 100%;
+  height: 15rem;
   width: 100%;
   background-position: center;
   // margin: 0 0.5rem;
@@ -118,7 +118,6 @@
   border-bottom-left-radius: 0.5rem;
   text-align: left;
   padding: 0.75rem 1rem;
-  // margin-top: 0.75rem;
 }
 
 .cardText > h5 {

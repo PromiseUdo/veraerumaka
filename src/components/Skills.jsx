@@ -10,7 +10,7 @@ const Skills = () => {
       className={styles.skills}
       title="Learn More About Me"
       subtitle="What I do"
-      description="I am a skilled and passionate Product Designer with experience in creating visually appealing and user-friendly website and app designs."
+      description="I am a skilled and passionate Product Designer with experience in creating visually appealing and user-friendly website and app designs. These are my services"
       id="skills"
     >
       <div className={styles.skillBars}>
@@ -46,7 +46,9 @@ const Skills = () => {
           <div className={styles.skillBarText}>
             <h2>Training</h2>
             <p>
-              I have experience training adults and kids on UI/UX design courses
+              I leverage my experience to guide aspiring designers through the
+              intricacies of UI/UX Design. Equipping them with tools and
+              knowledge to excel.
             </p>
           </div>
         </div>

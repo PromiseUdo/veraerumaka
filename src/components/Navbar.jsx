@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.scss";
 import { Link } from "react-scroll";
+
 import contactImg from "../assets/contact.png";
 import menu from "../assets/menu.png";
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
-        <Link to="/" spy={true} smooth={true} duration={500}>
+        <a href="/">
           <img className={styles.logo} src="/logo2.svg" alt="site logo" />
-        </Link>
+        </a>
         <div className={styles.desktopMenu}>
           <Link
             activeClass={styles.active}

@@ -65,6 +65,10 @@
       height: 3rem;
       width: 3rem;
       margin: 0 0.4rem;
+      color: $color-gray-100;
+      &:hover {
+        color: $color-border-dark;
+      }
     }
   }
 }

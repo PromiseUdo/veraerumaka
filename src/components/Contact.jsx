@@ -4,6 +4,8 @@ import XIcon from "../assets/x.png";
 import FacebookIcon from "../assets/facebook.svg";
 import BehanceIcon from "../assets/behance.svg";
 import LinkedinIcon from "../assets/linkedin.svg";
+import { FaBehanceSquare, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 const Contact = () => {
   return (
     <Section
@@ -43,34 +45,39 @@ const Contact = () => {
               href="https://www.behance.net/4053cadfverauchenna/projects"
               target="_blank"
             >
-              <img
+              {/* <img
                 src={BehanceIcon}
                 alt="behance icon"
                 className={styles.link}
-              />
+              /> */}
+              <FaBehanceSquare className={styles.link} />
             </a>
             <a
               href="https://www.linkedin.com/in/vera-erumaka-435254193/"
               target="_blank"
             >
-              <img
+              <FaLinkedin className={styles.link} />
+              {/* <img
                 src={LinkedinIcon}
                 alt="facebook icon"
                 className={styles.link}
-              />
+              /> */}
             </a>
             <a href="https://twitter.com/ErumakaVera" target="_blank">
-              <img src={XIcon} alt="x icon" className={styles.link} />
+              <FaSquareXTwitter className={styles.link} />
+              {/* <img src={XIcon} alt="x icon" className={styles.link} /> */}
             </a>
             <a
               href="https://web.facebook.com/profile.php?id=100080651036442"
               target="_blank"
             >
-              <img
+              {/* <img
+
                 src={FacebookIcon}
                 alt="facebook icon"
                 className={styles.link}
-              />
+              /> */}
+              <FaFacebookSquare className={styles.link} />
             </a>
           </div>
         </div>

@@ -44,7 +44,6 @@ const ProjectCard = ({ imgUrl, title, link, description }) => {
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",
-          // backgroundRepeat: "no-repeat",
         }}
         className={styles.cardInner}
       >
@@ -68,7 +67,7 @@ const Works = () => {
       className={styles.works}
       title="Some of my projects"
       subtitle="My Projects"
-      description="I take pride in paying attention to the smallest details and making sure that my work is pixel perfect."
+      description="I take pride in paying attention to the smallest details and making sure that my work is user-centered and delights your users."
       id="works"
     >
       <div className={styles.container}>

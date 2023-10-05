@@ -37,35 +37,42 @@ const Contact = () => {
           </button>
         </form>
         <div className={styles.socialProfiles}>
-          <a
-            href="https://www.behance.net/4053cadfverauchenna/projects"
-            target="_blank"
-          >
-            <img src={BehanceIcon} alt="behance icon" className={styles.link} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/vera-erumaka-435254193/"
-            target="_blank"
-          >
-            <img
-              src={LinkedinIcon}
-              alt="facebook icon"
-              className={styles.link}
-            />
-          </a>
-          <a href="https://twitter.com/ErumakaVera" target="_blank">
-            <img src={XIcon} alt="x icon" className={styles.link} />
-          </a>
-          <a
-            href="https://web.facebook.com/profile.php?id=100080651036442"
-            target="_blank"
-          >
-            <img
-              src={FacebookIcon}
-              alt="facebook icon"
-              className={styles.link}
-            />
-          </a>
+          <p>Let's Connect</p>
+          <div>
+            <a
+              href="https://www.behance.net/4053cadfverauchenna/projects"
+              target="_blank"
+            >
+              <img
+                src={BehanceIcon}
+                alt="behance icon"
+                className={styles.link}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vera-erumaka-435254193/"
+              target="_blank"
+            >
+              <img
+                src={LinkedinIcon}
+                alt="facebook icon"
+                className={styles.link}
+              />
+            </a>
+            <a href="https://twitter.com/ErumakaVera" target="_blank">
+              <img src={XIcon} alt="x icon" className={styles.link} />
+            </a>
+            <a
+              href="https://web.facebook.com/profile.php?id=100080651036442"
+              target="_blank"
+            >
+              <img
+                src={FacebookIcon}
+                alt="facebook icon"
+                className={styles.link}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </Section>

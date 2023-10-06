@@ -5,10 +5,34 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const work_experience = [
   {
     id: 1,
+    job_title: "UI/UX Designer & Instructor",
+    company_name: "Aceplora",
+    duration: "Aug 2023 - Present",
+    city: "Port Harcourt",
+    descriptions: [
+      "Lead in the design, of layout of the app",
+      "Conduct assessments of all User Interface in order to ensure quality and accuracy",
+    ],
+    job_type: "on-site",
+  },
+  {
+    id: 2,
     job_title: "UI/UX Designer",
-    company_name: "AfriMail",
-    duration: "2019 - Present",
-    city: "Lagos",
+    company_name: "Credib",
+    duration: "May 2023 - Aug 2023",
+    city: "Port Harcourt",
+    descriptions: [
+      "Lead in the design, of layout of the app",
+      "Conduct assessments of all User Interface in order to ensure quality and accuracy",
+    ],
+    job_type: "On-site",
+  },
+  {
+    id: 3,
+    job_title: "UI/UX Designer",
+    company_name: "TechKraft Inc",
+    duration: "Oct 2022 - Mar 2023",
+    city: "Imo",
     descriptions: [
       "Lead in the design, of layout of the app",
       "Conduct assessments of all User Interface in order to ensure quality and accuracy",
@@ -16,16 +40,16 @@ const work_experience = [
     job_type: "Remote",
   },
   {
-    id: 1,
+    id: 3,
     job_title: "UI/UX Designer",
-    company_name: "Credib",
-    duration: "2019 - Present",
-    city: "Port Harcourt",
+    company_name: "LogiKeep",
+    duration: "Aug 2023 - Oct 2022",
+    city: "Lagos",
     descriptions: [
       "Lead in the design, of layout of the app",
       "Conduct assessments of all User Interface in order to ensure quality and accuracy",
     ],
-    job_type: "On-site",
+    job_type: "Remote",
   },
 ];
 

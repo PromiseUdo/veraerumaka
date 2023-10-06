@@ -94,6 +94,7 @@ const Experience = () => {
       <div className={styles.container}>
         {work_experience.map((exp, idx) => (
           <ResumeItem
+            key={idx}
             job_title={exp.job_title}
             duration={exp.duration}
             company_name={exp.company_name}

@@ -102,6 +102,8 @@
       border: 1px solid $color-border-dark;
       .listItem {
         color: white;
+        border-radius: 1rem;
+
         padding: 0.5rem 3rem;
         margin: 0.25rem;
         background: $color-gray-300;

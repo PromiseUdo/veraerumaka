@@ -5,7 +5,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const work_experience = [
   {
     id: 1,
-    job_title: "UI/UX Designer & Instructor",
+    job_title: "Design Instructor",
     company_name: "Aceplora",
     duration: "Aug 2023 - Present",
     city: "Port Harcourt",

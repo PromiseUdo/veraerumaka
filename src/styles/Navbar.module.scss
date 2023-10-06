@@ -25,6 +25,12 @@
     // top: 0;
     // z-index: 3;
 
+    .logoLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .logo {
       object-fit: contain;
       height: 4rem;

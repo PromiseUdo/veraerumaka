@@ -10,7 +10,16 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
-        <img className={styles.logo} src="/logo2.svg" alt="site logo" />
+        <Link
+          className={styles.logoLink}
+          to="intro"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <img className={styles.logo} src="/logo2.svg" alt="site logo" />
+        </Link>
 
         <div className={styles.desktopMenu}>
           <Link

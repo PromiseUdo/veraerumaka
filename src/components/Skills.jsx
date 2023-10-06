@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <Section
       className={styles.skills}
-      title="Learn More About Me"
+      title="Learn More What I offer"
       subtitle="What I do"
       description="I am a skilled Product Designer with experience in creating visually appealing and user-friendly website and app designs. These are the services I render."
       id="skills"

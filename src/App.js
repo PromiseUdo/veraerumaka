@@ -11,6 +11,7 @@ import Works from "./components/Works";
 import "./app.scss";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Intro />
         <Skills />
         <Works />
+        <Experience />
         <Contact />
         <Footer />
       </main>

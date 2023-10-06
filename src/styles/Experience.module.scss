@@ -30,13 +30,15 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      //   justify-content: center;
       line-height: 18px;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: 600;
       text-transform: uppercase;
       margin-bottom: 10px;
-      color: $color-gradient-1;
+      color: $color-white;
+      @media screen and (max-width: 720px) {
+        font-size: 1rem;
+      }
       .jobType {
         font-size: 0.8rem;
         display: flex;

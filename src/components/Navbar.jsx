@@ -1,21 +1,31 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "../styles/Navbar.module.scss";
 import { Link } from "react-scroll";
-import { Link as Link2 } from "react-router-dom";
 import contactImg from "../assets/contact.png";
 import menu from "../assets/menu.png";
-
+import { useToggleState } from "../hooks/useToggleState";
+import { AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
+  const dropDownRef = useRef();
+  const hamburgerBtn = useRef();
+
+  const {
+    state: showMenu,
+    toggle,
+    close: closeMobileNav,
+  } = useToggleState(false);
+
+  const handleOutsideClick = (event) => {
+    if (dropDownRef.current && !dropDownRef.current.contains(event.target)) {
+      closeMobileNav();
+    }
+  };
   useEffect(() => {
-    document.addEventListener("mousedown", () => {
-      setShowMenu(false);
-    });
+    document.addEventListener("mousedown", handleOutsideClick);
 
     return () => {
-      document.removeEventListener("mousedown", () => {
-        setShowMenu(false);
-      });
+      document.removeEventListener("mousedown", handleOutsideClick);
     };
   });
   return (
@@ -91,19 +101,32 @@ const Navbar = () => {
           <img src={contactImg} alt="" className={styles.desktopMenuImg} />
           Contact Me
         </button>
-
-        <img
-          onClick={() => setShowMenu(!showMenu)}
+        {/* <img
+          onClick={!showMenu && (() => toggle())}
           className={styles.mobileMenu}
           src={menu}
           alt="menu"
-        />
+          ref={showMenu ? hamburgerBtn : undefined}
+        /> */}
+        {!showMenu ? (
+          <img
+            onClick={() => toggle()}
+            className={styles.mobileMenu}
+            src={menu}
+            alt="menu"
+            ref={hamburgerBtn}
+          />
+        ) : (
+          <AiOutlineClose className={styles.closeIcon} />
+        )}
+
         <div
+          ref={dropDownRef}
           className={styles.navMenu}
           style={{ display: showMenu ? "flex" : "none" }}
         >
           <Link
-            onClick={() => setShowMenu(false)}
+            onClick={closeMobileNav}
             activeClass={styles.active}
             to="intro"
             spy={true}
@@ -115,7 +138,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            onClick={() => setShowMenu(false)}
+            onClick={closeMobileNav}
             activeClass={styles.active}
             to="skills"
             spy={true}
@@ -128,7 +151,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            onClick={() => setShowMenu(false)}
+            onClick={closeMobileNav}
             activeClass={styles.active}
             to="works"
             spy={true}
@@ -140,7 +163,7 @@ const Navbar = () => {
             Works
           </Link>
           <Link
-            onClick={() => setShowMenu(false)}
+            onClick={closeMobileNav}
             activeClass={styles.active}
             to="experience"
             spy={true}
@@ -153,7 +176,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            onClick={() => setShowMenu(false)}
+            onClick={closeMobileNav}
             activeClass={styles.active}
             to="contact"
             spy={true}

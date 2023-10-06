@@ -88,6 +88,10 @@
         display: flex;
       }
     }
+    .closeIcon {
+      font-size: 32px;
+      color: yellow;
+    }
     .active {
       color: yellow;
       padding-bottom: 0.5rem;
@@ -109,7 +113,7 @@
       .listItem {
         color: white;
         border-radius: 1rem;
-
+        cursor: pointer;
         padding: 0.5rem 3rem;
         margin: 0.25rem;
         background: $color-gray-300;

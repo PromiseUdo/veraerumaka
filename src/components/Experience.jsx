@@ -40,10 +40,9 @@ const ResumeItem = ({
   return (
     <div className={styles.resumeItem}>
       <h4>
-        {job_title}{" "}
-        <span>
-          {" "}
-          <FaMapMarkerAlt /> {job_type}
+        <span>{job_title}</span>
+        <span className={styles.jobType}>
+          <FaMapMarkerAlt /> <span> {job_type}</span>
         </span>
       </h4>
       <h5>{duration}</h5>

@@ -6,6 +6,10 @@
   // padding: 0 2rem;
   text-align: center;
   margin: 0 auto;
+  @media screen and (max-width: 770px) {
+    max-width: 85%;
+  }
+
   .skillBar {
     display: flex;
     text-align: left;

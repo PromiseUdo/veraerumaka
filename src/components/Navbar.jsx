@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/Navbar.module.scss";
 import { Link } from "react-scroll";
 import { Link as Link2 } from "react-router-dom";
@@ -7,6 +7,17 @@ import menu from "../assets/menu.png";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  useEffect(() => {
+    document.addEventListener("mousedown", () => {
+      setShowMenu(false);
+    });
+
+    return () => {
+      document.removeEventListener("mousedown", () => {
+        setShowMenu(false);
+      });
+    };
+  });
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>

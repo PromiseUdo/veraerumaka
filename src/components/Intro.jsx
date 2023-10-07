@@ -6,6 +6,7 @@ import DownloadIcon from "../assets/download.png";
 import SuitcaseIcon from "../assets/suitcase.png";
 import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 const Intro = () => {
   return (
     <Section id="intro" className={styles.intro}>
@@ -40,16 +41,16 @@ const Intro = () => {
             offset={-100}
             duration={500}
           >
-            <button className={styles.hire}>
+            <motion.button whileTap={{ scale: 0.85 }} className={styles.hire}>
               <img className={styles.btnImg} src={btnImg} alt="hire me" />
               <span> Hire Me</span>
-            </button>
+            </motion.button>
           </Link>
           <a href="/resume/vera_erumaka_cv.pdf" download>
-            <button className={styles.resume}>
+            <motion.button whileTap={{ scale: 0.85 }} className={styles.resume}>
               <img className={styles.btnImg} src={DownloadIcon} alt="hire me" />
               <span> Download CV</span>
-            </button>
+            </motion.button>
           </a>
         </div>
       </div>

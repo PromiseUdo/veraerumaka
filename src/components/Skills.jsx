@@ -4,9 +4,14 @@ import UIDesign from "../assets/ui-design.png";
 import WebDesign from "../assets/website-design.png";
 import AppDesign from "../assets/app-design.png";
 import Training from "../assets/training.png";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 const Skills = () => {
+  const scrollRef = useRef(null);
+
   return (
     <Section
+      ref={scrollRef}
       className={styles.skills}
       title="Learn More About What I offer"
       subtitle="What I do"
@@ -14,7 +19,13 @@ const Skills = () => {
       id="skills"
     >
       <div className={styles.skillBars}>
-        <div className={styles.skillBar}>
+        <motion.div
+          initial={{ opacity: 0, y: 10, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }} // drag="x"
+          viewport={{ root: scrollRef }}
+          className={styles.skillBar}
+        >
           <img
             className={styles.skillBarImg}
             src={WebDesign}
@@ -27,8 +38,14 @@ const Skills = () => {
               design intuitive interfaces that engage and delight visitors.
             </p>
           </div>
-        </div>
-        <div className={styles.skillBar}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 10, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }} // drag="x"
+          viewport={{ root: scrollRef }}
+          className={styles.skillBar}
+        >
           <img
             className={styles.skillBarImg}
             src={AppDesign}
@@ -41,8 +58,14 @@ const Skills = () => {
               mobile interfaces that captivate and engage users.
             </p>
           </div>
-        </div>
-        <div className={styles.skillBar}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 10, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }} // drag="x"
+          viewport={{ root: scrollRef }}
+          className={styles.skillBar}
+        >
           <img className={styles.skillBarImg} src={Training} alt="app design" />
           <div className={styles.skillBarText}>
             <h2>Training</h2>
@@ -52,7 +75,7 @@ const Skills = () => {
               knowledge to excel.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

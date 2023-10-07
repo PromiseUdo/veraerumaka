@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { toast } from "react-toastify";
 import { BeatLoader } from "react-spinners";
-
+import { motion } from "framer-motion";
 const Contact = () => {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
@@ -69,38 +69,49 @@ const Contact = () => {
             name="message"
             placeholder="Your Message"
           ></textarea>
-          <button type="submit" className={styles.submitBtn}>
+          <motion.button
+            whileTap={{ scale: 0.85 }}
+            type="submit"
+            className={styles.submitBtn}
+          >
             {isLoading ? (
               <BeatLoader loading color="#ffffff" />
             ) : (
               "Send Message"
             )}
-          </button>
+          </motion.button>
         </form>
         <div className={styles.socialProfiles}>
           <p>Let's Connect</p>
           <div>
-            <a
+            <motion.a
+              whileTap={{ scale: 0.85 }}
               href="https://www.behance.net/4053cadfverauchenna/projects"
               target="_blank"
             >
               <FaBehanceSquare className={styles.link} />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileTap={{ scale: 0.85 }}
               href="https://www.linkedin.com/in/vera-erumaka-435254193/"
               target="_blank"
             >
               <FaLinkedin className={styles.link} />
-            </a>
-            <a href="https://twitter.com/ErumakaVera" target="_blank">
+            </motion.a>
+            <motion.a
+              whileTap={{ scale: 0.85 }}
+              href="https://twitter.com/ErumakaVera"
+              target="_blank"
+            >
               <FaSquareXTwitter className={styles.link} />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileTap={{ scale: 0.85 }}
               href="https://web.facebook.com/profile.php?id=100080651036442"
               target="_blank"
             >
               <FaFacebookSquare className={styles.link} />
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>

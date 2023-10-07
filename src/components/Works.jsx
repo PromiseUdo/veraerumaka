@@ -5,7 +5,7 @@ import Portfolio2 from "../assets/portfolio-2.png";
 import Portfolio3 from "../assets/portfolio-3.png";
 import Portfolio4 from "../assets/portfolio-4.png";
 import { AiOutlineLink } from "react-icons/ai";
-
+import { motion } from "framer-motion";
 const projectsData = [
   {
     id: 1,
@@ -82,13 +82,14 @@ const Works = () => {
             />
           ))}
         </div>
-        <a
+        <motion.a
+          whileTap={{ scale: 0.85 }}
           target="_blank"
           href="https://www.behance.net/4053cadfverauchenna/projects"
           className={styles.btn}
         >
           See More
-        </a>
+        </motion.a>
       </div>
     </Section>
   );

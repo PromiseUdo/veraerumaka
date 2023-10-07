@@ -113,7 +113,8 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <button
+        <motion.button
+          whileTap={{ scale: 0.85 }}
           onClick={() => {
             document
               .getElementById("contact")
@@ -127,7 +128,7 @@ const Navbar = () => {
             className={styles.desktopMenuImg}
           />
           Contact Me
-        </button>
+        </motion.button>
 
         {!showMenu ? (
           <img

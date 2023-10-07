@@ -10,7 +10,12 @@ import { motion } from "framer-motion";
 const Intro = () => {
   return (
     <Section id="intro" className={styles.intro}>
-      <div className={styles.introContent}>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className={styles.introContent}
+      >
         <span className={styles.hello}>Hello,</span>
         <span className={styles.introText}>
           I&apos;m <span className={styles.introName}>Vera Erumaka</span> <br />
@@ -30,7 +35,7 @@ const Intro = () => {
         </span>
         <p className={styles.introPara}>
           I am a skilled product designer with experience in creating <br />
-          visually appealing and user friendly designs.
+          visually appealing and user-friendly designs.
         </p>
 
         <div className={styles.actions}>
@@ -53,11 +58,16 @@ const Intro = () => {
             </motion.button>
           </a>
         </div>
-      </div>
-      <div className={styles.illustration}>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className={styles.illustration}
+      >
         <img src={bg} alt="profile picture" className={styles.bg} />
         <span className={styles.circleSpin}></span>
-      </div>
+      </motion.div>
     </Section>
   );
 };

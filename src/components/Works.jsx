@@ -6,6 +6,7 @@ import Portfolio3 from "../assets/portfolio-3.png";
 import Portfolio4 from "../assets/portfolio-4.png";
 import { AiOutlineLink } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 const projectsData = [
   {
     id: 1,
@@ -37,10 +38,14 @@ const projectsData = [
   },
 ];
 
-const ProjectCard = ({ imgUrl, title, link, description }) => {
+const ProjectCard = ({ ref, imgUrl, title, link, description }) => {
   return (
     <div className={styles.cardContainer}>
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 10, scale: 0.9 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ root: ref }}
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",
@@ -52,7 +57,7 @@ const ProjectCard = ({ imgUrl, title, link, description }) => {
             <AiOutlineLink className={styles.linkIcon} />
           </a>
         </div>
-      </div>
+      </motion.div>
       <div className={styles.cardText}>
         <h5>{title}</h5>
         <p>{description}</p>
@@ -62,10 +67,13 @@ const ProjectCard = ({ imgUrl, title, link, description }) => {
 };
 
 const Works = () => {
+  const scrollRef = useRef(null);
+
   return (
     <Section
+      ref={scrollRef}
       className={styles.works}
-      title="Some of my projects"
+      title="Some Of My Projects"
       subtitle="My Projects"
       description="I take pride in paying attention to the smallest details and making sure that my work is user-centered and delights your users."
       id="works"
@@ -74,6 +82,7 @@ const Works = () => {
         <div className={styles.worksImgs}>
           {projectsData.map((project, idx) => (
             <ProjectCard
+              ref={scrollRef}
               key={idx}
               link={project.link}
               title={project.title}

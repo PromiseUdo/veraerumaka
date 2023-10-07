@@ -42,7 +42,7 @@ const Contact = () => {
   return (
     <Section
       className={styles.contact}
-      title="Let's talk about your next project"
+      title="Let's Talk About Your Next Project"
       subtitle="Contact Me"
       description="Feel free to reach out to me to discuss your project or learn about product design"
       id="contact"
@@ -85,6 +85,9 @@ const Contact = () => {
           <p>Let's Connect</p>
           <div>
             <motion.a
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 1 }}
               whileTap={{ scale: 0.85 }}
               href="https://www.behance.net/4053cadfverauchenna/projects"
               target="_blank"
@@ -92,6 +95,9 @@ const Contact = () => {
               <FaBehanceSquare className={styles.link} />
             </motion.a>
             <motion.a
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 1 }}
               whileTap={{ scale: 0.85 }}
               href="https://www.linkedin.com/in/vera-erumaka-435254193/"
               target="_blank"
@@ -99,6 +105,9 @@ const Contact = () => {
               <FaLinkedin className={styles.link} />
             </motion.a>
             <motion.a
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 1 }}
               whileTap={{ scale: 0.85 }}
               href="https://twitter.com/ErumakaVera"
               target="_blank"
@@ -106,6 +115,9 @@ const Contact = () => {
               <FaSquareXTwitter className={styles.link} />
             </motion.a>
             <motion.a
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 1 }}
               whileTap={{ scale: 0.85 }}
               href="https://web.facebook.com/profile.php?id=100080651036442"
               target="_blank"

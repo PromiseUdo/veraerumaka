@@ -13,7 +13,7 @@ const Skills = () => {
     <Section
       ref={scrollRef}
       className={styles.skills}
-      title="Learn More About What I offer"
+      title="Learn More About What I Offer"
       subtitle="What I do"
       description="I am a skilled Product Designer with experience in creating visually appealing and user-friendly website and app designs. These are the services I render."
       id="skills"

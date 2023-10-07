@@ -1,7 +1,8 @@
 import styles from "../styles/Experience.module.scss";
 import Section from "./Section";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
+import { motion, useAnimate, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 const work_experience = [
   {
     id: 1,
@@ -10,8 +11,9 @@ const work_experience = [
     duration: "Aug 2023 - Present",
     city: "Port Harcourt",
     descriptions: [
-      "Lead in the design, of layout of the app",
-      "Conduct assessments of all User Interface in order to ensure quality and accuracy",
+      "Coach students on User Interface design adhering to the curriculum.",
+      "Prepare learning materials such as exercises, lesson handouts and projects.",
+      "Conducted reviews and provided feedback on how to improve learning standards.",
     ],
     job_type: "on-site",
   },
@@ -22,8 +24,9 @@ const work_experience = [
     duration: "May 2023 - Aug 2023",
     city: "Port Harcourt",
     descriptions: [
-      "Lead in the design, of layout of the app",
-      "Conduct assessments of all User Interface in order to ensure quality and accuracy",
+      "Designed UI elements adhering to style standards and typography of the app.",
+      "Provided advice on the implementation of UI elements based on UX research I carried out.",
+      "Tested UI elements prior and after development and created variance reports for developers.",
     ],
     job_type: "On-site",
   },
@@ -34,8 +37,9 @@ const work_experience = [
     duration: "Oct 2022 - Mar 2023",
     city: "Imo",
     descriptions: [
-      "Lead in the design, of layout of the app",
-      "Conduct assessments of all User Interface in order to ensure quality and accuracy",
+      "Designed UI elements adhering to style standards and typography of the app.",
+      "Tested UI elements after developments.",
+      "Collaborated with other designers to produce high-quality UX designs.",
     ],
     job_type: "Remote",
   },
@@ -46,14 +50,15 @@ const work_experience = [
     duration: "Aug 2023 - Oct 2022",
     city: "Lagos",
     descriptions: [
-      "Lead in the design, of layout of the app",
-      "Conduct assessments of all User Interface in order to ensure quality and accuracy",
+      "Lead in the design, of layout of the app.",
+      "Conduct assessments of all User Interface in order to ensure quality and accuracy.",
     ],
     job_type: "Remote",
   },
 ];
 
 const ResumeItem = ({
+  ref,
   job_title,
   duration,
   company_name,
@@ -61,8 +66,22 @@ const ResumeItem = ({
   descriptions,
   job_type,
 }) => {
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope);
+
+  useEffect(() => {
+    if (isInView) {
+      animate(scope.current, { opacity: 1 }, { duration: 1 });
+    }
+  }, [isInView]);
   return (
-    <div className={styles.resumeItem}>
+    <motion.div
+      initial={{ opacity: 0, y: 10, scale: 0.9 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ root: ref }}
+      className={styles.resumeItem}
+    >
       <h4>
         <span>{job_title}</span>
         <span className={styles.jobType}>
@@ -73,20 +92,23 @@ const ResumeItem = ({
       <p>
         <em>{`${company_name}, ${city}`}</em>
       </p>
-      <ul>
+      <ul ref={scope}>
         {descriptions?.map((desc, idx) => (
           <li key={idx}>{desc}</li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
 const Experience = () => {
+  const scrollRef = useRef(null);
+
   return (
     <Section
+      ref={scrollRef}
       className={styles.contact}
-      title="A summary of my work experience"
+      title="A Summary Of My Work Experience"
       subtitle="Professional Experience"
       description="I have worked with the these companies"
       id="experience"
@@ -94,6 +116,7 @@ const Experience = () => {
       <div className={styles.container}>
         {work_experience.map((exp, idx) => (
           <ResumeItem
+            ref={scrollRef}
             key={idx}
             job_title={exp.job_title}
             duration={exp.duration}

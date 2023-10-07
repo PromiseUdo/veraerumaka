@@ -11,8 +11,8 @@ const work_experience = [
     duration: "Aug 2023 - Present",
     city: "Port Harcourt",
     descriptions: [
-      "Coach students on User Interface design adhering to the curriculum.",
-      "Prepare learning materials such as exercises, lesson handouts and projects.",
+      "Coached students on User Interface design adhering to the curriculum.",
+      "Prepared learning materials such as exercises, lesson handouts and projects.",
       "Conducted reviews and provided feedback on how to improve learning standards.",
     ],
     job_type: "on-site",
@@ -51,7 +51,7 @@ const work_experience = [
     city: "Lagos",
     descriptions: [
       "Lead in the design, of layout of the app.",
-      "Conduct assessments of all User Interface in order to ensure quality and accuracy.",
+      "Conducted assessments of all User Interface in order to ensure quality and accuracy.",
     ],
     job_type: "Remote",
   },

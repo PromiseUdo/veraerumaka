@@ -108,9 +108,9 @@ const Experience = () => {
     <Section
       ref={scrollRef}
       className={styles.contact}
-      title="A Summary Of My Work Experience"
+      title="Where I Have Gained Experiences"
       subtitle="Professional Experience"
-      description="I have worked with the these companies"
+      description="They revolve around SASS, Edu-Tech, NGOs, etc"
       id="experience"
     >
       <div className={styles.container}>

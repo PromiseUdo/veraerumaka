@@ -4,8 +4,7 @@ import { BsFillSuitHeartFill } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <p>Copyright &#169; 2023 Vera Erumaka. Made with </p>
-      <BsFillSuitHeartFill style={{ margin: "0 0.2rem" }} />
+      <p>Copyright &#169; 2023 Vera Erumaka </p>
     </footer>
   );
 };

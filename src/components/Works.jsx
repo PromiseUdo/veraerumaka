@@ -73,9 +73,9 @@ const Works = () => {
     <Section
       ref={scrollRef}
       className={styles.works}
-      title="Some Of My Projects"
-      subtitle="My Projects"
-      description="I take pride in paying attention to the smallest details and making sure that my work is user-centered and delights your users."
+      title="Featured Projects"
+      subtitle="Projects"
+      description="Here are a few of the many projects that I have worked on"
       id="works"
     >
       <div className={styles.container}>

@@ -23,9 +23,9 @@ const Intro = () => {
             sequence={[
               "Product Designer",
               1000,
-              "Instructor",
+              "Tutor",
               1000,
-              "Creative Thinker",
+              "UX Designer",
               1000,
             ]}
             wrapper="span"
@@ -34,8 +34,9 @@ const Intro = () => {
           />
         </span>
         <p className={styles.introPara}>
-          I am a skilled product designer with experience in creating <br />
-          visually appealing and user-friendly designs.
+          I specialize in UI and UX design. With experience in creating <br />
+          visually appealing and intuitive design to deliver outstanding
+          results.
         </p>
 
         <div className={styles.actions}>

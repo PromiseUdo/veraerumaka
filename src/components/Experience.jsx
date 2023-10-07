@@ -110,7 +110,7 @@ const Experience = () => {
       className={styles.contact}
       title="Where I Have Gained Experiences"
       subtitle="Professional Experience"
-      description="They revolve around SASS, Edu-Tech, NGOs, etc"
+      description="They revolve around SAAS, Edu-Tech, NGOs, etc"
       id="experience"
     >
       <div className={styles.container}>

@@ -29,6 +29,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
 
     .logo {
@@ -110,13 +111,31 @@
       background: $color-gray-200;
       border-radius: 1rem;
       border: 1px solid $color-border-dark;
-      .listItem {
-        color: white;
-        border-radius: 1rem;
-        cursor: pointer;
-        padding: 0.5rem 3rem;
-        margin: 0.25rem;
-        background: $color-gray-300;
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        li {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          .listItem {
+            display: flex;
+            width: 100%;
+            color: white;
+            border-radius: 1rem;
+            cursor: pointer;
+            padding: 0.5rem 3rem;
+            margin: 0.25rem;
+            background: $color-gray-300;
+          }
+        }
       }
     }
   }

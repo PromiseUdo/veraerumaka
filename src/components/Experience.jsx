@@ -86,7 +86,7 @@ const Experience = () => {
   return (
     <Section
       className={styles.contact}
-      title="A Summary of my work experience"
+      title="A summary of my work experience"
       subtitle="Professional Experience"
       description="I have worked with the these companies"
       id="experience"

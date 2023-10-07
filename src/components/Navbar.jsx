@@ -5,11 +5,27 @@ import contactImg from "../assets/contact.png";
 import menu from "../assets/menu.png";
 import { useToggleState } from "../hooks/useToggleState";
 import { AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
 const Navbar = () => {
   // const [showMenu, setShowMenu] = useState(false);
   const dropDownRef = useRef();
   const hamburgerBtn = useRef();
 
+  // main nav variants
+  const variants = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  };
+
+  //mobile nav variants
+  const mobileVariant = {
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 300, damping: 24 },
+    },
+    closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+  };
   const {
     state: showMenu,
     toggle,
@@ -28,8 +44,15 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   });
+
   return (
-    <div className={styles.container}>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      transition={{ ease: "easeOut", duration: 2 }}
+      className={styles.container}
+    >
       <div className={styles.navbar}>
         <Link
           className={styles.logoLink}
@@ -98,16 +121,14 @@ const Navbar = () => {
           }}
           className={styles.desktopMenuBtn}
         >
-          <img src={contactImg} alt="" className={styles.desktopMenuImg} />
+          <img
+            src={contactImg}
+            alt="mail icon"
+            className={styles.desktopMenuImg}
+          />
           Contact Me
         </button>
-        {/* <img
-          onClick={!showMenu && (() => toggle())}
-          className={styles.mobileMenu}
-          src={menu}
-          alt="menu"
-          ref={showMenu ? hamburgerBtn : undefined}
-        /> */}
+
         {!showMenu ? (
           <img
             onClick={() => toggle()}
@@ -120,76 +141,115 @@ const Navbar = () => {
           <AiOutlineClose className={styles.closeIcon} />
         )}
 
-        <div
+        <motion.div
+          initial={false}
+          animate={showMenu ? "open" : "closed"}
           ref={dropDownRef}
           className={styles.navMenu}
-          style={{ display: showMenu ? "flex" : "none" }}
+          style={{
+            display: showMenu ? "flex" : "none",
+          }}
         >
-          <Link
-            onClick={closeMobileNav}
-            activeClass={styles.active}
-            to="intro"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            className={styles.listItem}
+          <motion.ul
+            variants={{
+              open: {
+                clipPath: "inset(0% 0% 0% 0% round 10px)",
+                transition: {
+                  type: "spring",
+                  bounce: 0,
+                  duration: 0.7,
+                  delayChildren: 0.3,
+                  staggerChildren: 0.05,
+                },
+              },
+              closed: {
+                clipPath: "inset(10% 50% 90% 50% round 10px)",
+                transition: {
+                  type: "spring",
+                  bounce: 0,
+                  duration: 0.3,
+                },
+              },
+            }}
+            style={{ pointerEvents: showMenu ? "auto" : "none" }}
           >
-            Home
-          </Link>
-          <Link
-            onClick={closeMobileNav}
-            activeClass={styles.active}
-            to="skills"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-            className={styles.listItem}
-          >
-            About
-          </Link>
+            <motion.li variants={mobileVariant}>
+              <Link
+                onClick={closeMobileNav}
+                activeClass={styles.active}
+                to="intro"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className={styles.listItem}
+              >
+                Home
+              </Link>
+            </motion.li>
 
-          <Link
-            onClick={closeMobileNav}
-            activeClass={styles.active}
-            to="works"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-            className={styles.listItem}
-          >
-            Works
-          </Link>
-          <Link
-            onClick={closeMobileNav}
-            activeClass={styles.active}
-            to="experience"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-            className={styles.listItem}
-          >
-            Experience
-          </Link>
+            <motion.li variants={mobileVariant}>
+              <Link
+                onClick={closeMobileNav}
+                activeClass={styles.active}
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className={styles.listItem}
+              >
+                About
+              </Link>
+            </motion.li>
 
-          <Link
-            onClick={closeMobileNav}
-            activeClass={styles.active}
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-            className={styles.listItem}
-          >
-            Contact
-          </Link>
-        </div>
+            <motion.li variants={mobileVariant}>
+              <Link
+                onClick={closeMobileNav}
+                activeClass={styles.active}
+                to="works"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className={styles.listItem}
+              >
+                Works
+              </Link>
+            </motion.li>
+            <motion.li variants={mobileVariant}>
+              <Link
+                onClick={closeMobileNav}
+                activeClass={styles.active}
+                to="experience"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className={styles.listItem}
+              >
+                Experience
+              </Link>
+            </motion.li>
+
+            <motion.li variants={mobileVariant}>
+              <Link
+                onClick={closeMobileNav}
+                activeClass={styles.active}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className={styles.listItem}
+              >
+                Contact
+              </Link>
+            </motion.li>
+          </motion.ul>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

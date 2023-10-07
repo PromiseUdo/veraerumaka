@@ -18,7 +18,7 @@ function App() {
     <div>
       <ToastContainer />
       <Navbar />
-      <main className="main">
+      <main className="main" style={{ position: "relative" }}>
         <GradientCircleTop />
         <GradientCircleMd />
         <Intro />

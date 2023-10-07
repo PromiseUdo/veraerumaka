@@ -82,7 +82,7 @@ const Contact = () => {
           </motion.button>
         </form>
         <div className={styles.socialProfiles}>
-          <p>Let's Connect</p>
+          <p>Connect With Me</p>
           <div>
             <motion.a
               initial={{ opacity: 0, y: 10, scale: 0.9 }}

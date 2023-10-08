@@ -36,13 +36,13 @@ const Skills = () => {
               {/* <h2>Website Design</h2> */}
               <p>
                 I am currently a product designer at Aceplora and I take
-                quarterly bootcamp trainings. I've mentored and trained
+                quarterly bootcamp trainings. I&apos;ve mentored and trained
                 designers to see beyond the tools and deliver easy and enjoyable
                 products that solves real problems.
               </p>
               <p>
-                When I'm not designing, I am either seeing a movie, hitting the
-                gym or simply being awesome. &#128513;
+                When I&apos;m not designing, I am either seeing a movie, hitting
+                the gym or simply being awesome. &#128513;
               </p>
 
               <p>

@@ -44,7 +44,7 @@ const Contact = () => {
       className={styles.contact}
       title="Let's Talk About Your Next Project"
       subtitle="Contact Me"
-      description="If you need a highly inspired designer to execute your ideas. I am your girl!"
+      description="If you need a highly inspired designer to execute your ideas. I am your girl! &#129303;"
       id="contact"
     >
       <div className={styles.container}>

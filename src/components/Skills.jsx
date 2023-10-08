@@ -15,7 +15,7 @@ const Skills = () => {
       className={styles.skills}
       title="Learn More About Me"
       subtitle="About Me"
-      description="I am a skilled Product Designer with experience in creating visually appealing and user-friendly website and app designs. These are the services I render."
+      description="A sneak peek into who I am."
       id="skills"
     >
       <div className={styles.container}>
@@ -42,7 +42,7 @@ const Skills = () => {
               </p>
               <p>
                 When I'm not designing, I am either seeing a movie, hitting the
-                gym or simply being awesome.
+                gym or simply being awesome. &#128513;
               </p>
 
               <p>
@@ -92,28 +92,78 @@ const Skills = () => {
 
         <div className={styles.skillBars}>
           <h3>My Design Process</h3>
-          <motion.div
-            initial={{ opacity: 0, y: 10, scale: 0.9 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.5 }} // drag="x"
-            viewport={{ root: scrollRef }}
-            className={styles.process}
-          >
-            <div className={styles.skillBarText}>
-              <p>Understand</p>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 10, scale: 0.9 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.5 }} // drag="x"
-            viewport={{ root: scrollRef }}
-            className={styles.process}
-          >
-            <div className={styles.skillBarText}>
-              <p>Understand</p>
-            </div>
-          </motion.div>
+          <p className={styles.processDesc}>
+            My method ensures that I understand the purpose of the project and
+            produce good looking results.
+          </p>
+          <div className={styles.processes}>
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.5 }} // drag="x"
+              viewport={{ root: scrollRef }}
+              className={styles.process}
+            >
+              <div className={styles.skillBarText}>
+                <p>Understand</p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.5 }} // drag="x"
+              viewport={{ root: scrollRef }}
+              className={styles.process}
+            >
+              <div className={styles.skillBarText}>
+                <p>UX Research</p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.5 }} // drag="x"
+              viewport={{ root: scrollRef }}
+              className={styles.process}
+            >
+              <div className={styles.skillBarText}>
+                <p>Analyze</p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.5 }} // drag="x"
+              viewport={{ root: scrollRef }}
+              className={styles.process}
+            >
+              <div className={styles.skillBarText}>
+                <p>Prototype</p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.5 }} // drag="x"
+              viewport={{ root: scrollRef }}
+              className={styles.process}
+            >
+              <div className={styles.skillBarText}>
+                <p>Testing/Validation</p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.5 }} // drag="x"
+              viewport={{ root: scrollRef }}
+              className={styles.process}
+            >
+              <div className={styles.skillBarText}>
+                <p>Hand Over</p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </Section>

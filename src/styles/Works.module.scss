@@ -102,7 +102,6 @@
   background: $color-gray-200;
   overflow: hidden;
   padding: 1rem 0;
-  // border: 1px solid $color-gray-200;
   border-radius: 0.5rem;
 
   @media screen and (max-width: 1024px) {
@@ -119,12 +118,9 @@
 .cardInner {
   position: relative;
   overflow: hidden;
-  // height: calc(15rem - 1px);
   height: 15rem;
   width: 90%;
   background-position: center;
-  // margin-bottom: 0.5rem;
-  // border: 2px solid $color-border-dark;
   border-radius: 0.5rem;
   &:hover {
     transform: scale(1.1);
@@ -144,15 +140,6 @@
   align-items: center;
   margin-top: 0.5rem;
   gap: 0.3rem;
-  // background: $color-gray-200;
-  // border-bottom-right-radius: 0.5rem;
-  // border-bottom-left-radius: 0.5rem;
-  // text-align: left;
-  // border: 1px solid $color-gray-200;
-  // border-top: none;
-  // padding: 0.75rem 1rem;
-  // padding: 0.5rem 0;
-  // text-align: center;
 
   @media screen and (max-width: 770px) {
     gap: 0.2rem;
@@ -163,17 +150,11 @@
   font-weight: 600;
   font-size: 1rem;
   color: $color-white;
-
-  // margin-bottom: 0.3rem;
-  @media screen and (max-width: 770px) {
-    // text-align: center;
-  }
 }
 .cardText > p {
   font-weight: 300;
   font-size: 0.8rem;
   color: $color-gray-100;
-  // margin-bottom: 0.3rem;
 }
 
 .overlay {
@@ -196,12 +177,6 @@
   );
 }
 
-// .cardInner:hover .overlay {
-//   display: flex;
-//   visibility: visible;
-//   opacity: 0.8;
-//   transition: all ease 0.5s;
-// }
 .linkWrapper {
   display: flex;
   justify-content: center;

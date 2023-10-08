@@ -1,6 +1,4 @@
 import styles from "../styles/Footer.module.scss";
-import { AiFillHeart } from "react-icons/ai";
-import { BsFillSuitHeartFill } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className={styles.footer}>

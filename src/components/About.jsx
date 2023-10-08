@@ -1,9 +1,5 @@
 import styles from "../styles/About.module.scss";
 import Section from "./Section";
-import UIDesign from "../assets/ui-design.png";
-import WebDesign from "../assets/website-design.png";
-import AppDesign from "../assets/app-design.png";
-import Training from "../assets/training.png";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 const About = () => {
@@ -23,17 +19,11 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, y: 10, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.5 }} // drag="x"
+            transition={{ duration: 0.5 }}
             viewport={{ root: scrollRef }}
             className={styles.skillBar}
           >
-            {/* <img
-            className={styles.skillBarImg}
-            src={WebDesign}
-            alt="web design"
-          /> */}
             <div className={styles.skillBarText}>
-              {/* <h2>Website Design</h2> */}
               <p>
                 I am currently a product designer at Aceplora and I take
                 quarterly bootcamp trainings. I&apos;ve mentored and trained
@@ -51,43 +41,6 @@ const About = () => {
               </p>
             </div>
           </motion.div>
-          {/* <motion.div
-          initial={{ opacity: 0, y: 10, scale: 0.9 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.5 }} // drag="x"
-          viewport={{ root: scrollRef }}
-          className={styles.skillBar}
-        >
-          <img
-            className={styles.skillBarImg}
-            src={AppDesign}
-            alt="app design"
-          />
-          <div className={styles.skillBarText}>
-            <h2>Mobile App Design</h2>
-            <p>
-              I have experience in crafting user-friendly and visually appealing
-              mobile interfaces that captivate and engage users.
-            </p>
-          </div>
-        </motion.div> */}
-          {/* <motion.div
-          initial={{ opacity: 0, y: 10, scale: 0.9 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.5 }} // drag="x"
-          viewport={{ root: scrollRef }}
-          className={styles.skillBar}
-        >
-          <img className={styles.skillBarImg} src={Training} alt="app design" />
-          <div className={styles.skillBarText}>
-            <h2>Training</h2>
-            <p>
-              I leverage my experience to guide aspiring designers through the
-              intricacies of UI/UX Design. Equipping them with tools and
-              knowledge to excel.
-            </p>
-          </div>
-        </motion.div> */}
         </div>
 
         <div className={styles.skillBars}>
@@ -100,67 +53,69 @@ const About = () => {
             <motion.div
               initial={{ opacity: 0, y: 10, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5 }} // drag="x"
+              transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
               className={styles.process}
             >
               <div className={styles.skillBarText}>
-                <p>Understand</p>
+                <motion.p whileHover={{ scale: 1.01 }}>Understand</motion.p>
               </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5 }} // drag="x"
+              transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
               className={styles.process}
             >
               <div className={styles.skillBarText}>
-                <p>UX Research</p>
+                <motion.p whileHover={{ scale: 1.01 }}>UX Research</motion.p>
               </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5 }} // drag="x"
+              transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
               className={styles.process}
             >
               <div className={styles.skillBarText}>
-                <p>Analyze</p>
+                <motion.p whileHover={{ scale: 1.01 }}>Analyze</motion.p>
               </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5 }} // drag="x"
+              transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
               className={styles.process}
             >
               <div className={styles.skillBarText}>
-                <p>Prototype</p>
+                <motion.p whileHover={{ scale: 1.01 }}>Prototype</motion.p>
               </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5 }} // drag="x"
+              transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
               className={styles.process}
             >
               <div className={styles.skillBarText}>
-                <p>Testing/Validation</p>
+                <motion.p whileHover={{ scale: 1.01 }}>
+                  Testing/Validation
+                </motion.p>
               </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 10, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5 }} // drag="x"
+              transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
               className={styles.process}
             >
               <div className={styles.skillBarText}>
-                <p>Hand Over</p>
+                <motion.p whileHover={{ scale: 1.01 }}>Hand Over</motion.p>
               </div>
             </motion.div>
           </div>

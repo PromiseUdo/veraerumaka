@@ -7,7 +7,6 @@ import { useToggleState } from "../hooks/useToggleState";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 const Navbar = () => {
-  // const [showMenu, setShowMenu] = useState(false);
   const dropDownRef = useRef();
   const hamburgerBtn = useRef();
 

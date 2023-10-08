@@ -44,13 +44,11 @@ const ProjectCard = ({ ref, imgUrl, title, link, description }) => {
       <motion.div
         initial={{ opacity: 0, y: 10, scale: 0.9 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        // whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.5 }}
         viewport={{ root: ref }}
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",
-          // backgroundPosition: "center",
         }}
         className={styles.cardInner}
       >

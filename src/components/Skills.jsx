@@ -13,33 +13,45 @@ const Skills = () => {
     <Section
       ref={scrollRef}
       className={styles.skills}
-      title="Learn More About What I Offer"
-      subtitle="What I do"
+      title="Learn More About Me"
+      subtitle="About Me"
       description="I am a skilled Product Designer with experience in creating visually appealing and user-friendly website and app designs. These are the services I render."
       id="skills"
     >
-      <div className={styles.skillBars}>
-        <motion.div
-          initial={{ opacity: 0, y: 10, scale: 0.9 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.5 }} // drag="x"
-          viewport={{ root: scrollRef }}
-          className={styles.skillBar}
-        >
-          <img
+      <div className={styles.container}>
+        <div className={styles.skillBars}>
+          <motion.div
+            initial={{ opacity: 0, y: 10, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.5 }} // drag="x"
+            viewport={{ root: scrollRef }}
+            className={styles.skillBar}
+          >
+            {/* <img
             className={styles.skillBarImg}
             src={WebDesign}
             alt="web design"
-          />
-          <div className={styles.skillBarText}>
-            <h2>Website Design</h2>
-            <p>
-              I specialize in crafting user-centered website experiences, I
-              design intuitive interfaces that engage and delight visitors.
-            </p>
-          </div>
-        </motion.div>
-        <motion.div
+          /> */}
+            <div className={styles.skillBarText}>
+              {/* <h2>Website Design</h2> */}
+              <p>
+                I am currently a product designer at Aceplora and I take
+                quarterly bootcamp trainings. I've mentored and trained
+                designers to see beyond the tools and deliver easy and enjoyable
+                products that solves real problems.
+              </p>
+              <p>
+                When I'm not designing, I am either seeing a movie, hitting the
+                gym or simply being awesome.
+              </p>
+
+              <p>
+                I am open to both full-time remote and contract roles. Feel free
+                to reach out to me to bring your ideas into life.
+              </p>
+            </div>
+          </motion.div>
+          {/* <motion.div
           initial={{ opacity: 0, y: 10, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.5 }} // drag="x"
@@ -58,8 +70,8 @@ const Skills = () => {
               mobile interfaces that captivate and engage users.
             </p>
           </div>
-        </motion.div>
-        <motion.div
+        </motion.div> */}
+          {/* <motion.div
           initial={{ opacity: 0, y: 10, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.5 }} // drag="x"
@@ -75,7 +87,66 @@ const Skills = () => {
               knowledge to excel.
             </p>
           </div>
-        </motion.div>
+        </motion.div> */}
+        </div>
+
+        <div className={styles.skillBars}>
+          <h3>My Design Process</h3>
+          <motion.div
+            initial={{ opacity: 0, y: 10, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.5 }} // drag="x"
+            viewport={{ root: scrollRef }}
+            className={styles.process}
+          >
+            {/* <img
+            className={styles.skillBarImg}
+            src={WebDesign}
+            alt="web design"
+          /> */}
+            <div className={styles.skillBarText}>
+              {/* <h2>Website Design</h2> */}
+              <p>Understand</p>
+            </div>
+          </motion.div>
+          {/* <motion.div
+          initial={{ opacity: 0, y: 10, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }} // drag="x"
+          viewport={{ root: scrollRef }}
+          className={styles.skillBar}
+        >
+          <img
+            className={styles.skillBarImg}
+            src={AppDesign}
+            alt="app design"
+          />
+          <div className={styles.skillBarText}>
+            <h2>Mobile App Design</h2>
+            <p>
+              I have experience in crafting user-friendly and visually appealing
+              mobile interfaces that captivate and engage users.
+            </p>
+          </div>
+        </motion.div> */}
+          {/* <motion.div
+          initial={{ opacity: 0, y: 10, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }} // drag="x"
+          viewport={{ root: scrollRef }}
+          className={styles.skillBar}
+        >
+          <img className={styles.skillBarImg} src={Training} alt="app design" />
+          <div className={styles.skillBarText}>
+            <h2>Training</h2>
+            <p>
+              I leverage my experience to guide aspiring designers through the
+              intricacies of UI/UX Design. Equipping them with tools and
+              knowledge to excel.
+            </p>
+          </div>
+        </motion.div> */}
+        </div>
       </div>
     </Section>
   );

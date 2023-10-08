@@ -1,51 +1,81 @@
 @import "../colors";
-.skillBars {
-  overflow: hidden;
-  width: 100vw;
-  max-width: 80%;
-  // padding: 0 2rem;
-  text-align: center;
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 75rem;
   margin: 0 auto;
-  @media screen and (max-width: 770px) {
-    max-width: 85%;
-  }
+  // align-items: center;
+  overflow: hidden;
+  gap: 2rem;
+  .skillBars {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 80%;
+    // padding: 0 2rem;
+    // background: green;
+    text-align: center;
+    margin: 0 auto;
 
-  .skillBar {
-    display: flex;
-    text-align: left;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-    background: $color-gray-200;
-    border-radius: 0.5rem;
-    @media screen and (max-width: 480px) {
-      padding: 1.5rem 1.2rem;
+    @media screen and (max-width: 770px) {
+      max-width: 85%;
+    }
+    h3 {
+      text-align: left;
     }
 
-    .skillBarImg {
-      object-fit: cover;
-      height: 3rem;
-      width: 3rem;
-      margin-right: 2rem;
+    .process {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      width: 15rem;
+      // margin: 1rem;
+      padding: 1rem 1.5rem;
+      background: $color-gray-300;
+      box-sizing: border-box;
+      border: 1.5px solid $color-border-dark;
+      border-radius: 0.5rem;
       @media screen and (max-width: 480px) {
-        height: 2.25rem;
-        width: 2.25rem;
+        padding: 1.5rem 1.2rem;
       }
     }
-
-    .skillBarText > p {
-      font-size: 0.9rem;
-      font-weight: 200;
-
-      @media screen and (max-width: 720px) {
-        font-size: 2.2vw;
-      }
+    .skillBar {
+      display: flex;
+      text-align: left;
+      // margin: 1rem;
+      padding: 1.5rem 2rem;
+      background: $color-gray-200;
+      border-radius: 0.5rem;
       @media screen and (max-width: 480px) {
-        font-size: 3.2vw;
+        padding: 1.5rem 1.2rem;
       }
-    }
-    .skillBarText > h2 {
-      @media screen and (max-width: 480px) {
-        font-size: 5vw;
+
+      .skillBarImg {
+        object-fit: cover;
+        height: 3rem;
+        width: 3rem;
+        margin-right: 2rem;
+        @media screen and (max-width: 480px) {
+          height: 2.25rem;
+          width: 2.25rem;
+        }
+      }
+
+      .skillBarText > p {
+        font-size: 0.9rem;
+        font-weight: 200;
+
+        @media screen and (max-width: 720px) {
+          font-size: 2.2vw;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 3.2vw;
+        }
+      }
+      .skillBarText > h2 {
+        @media screen and (max-width: 480px) {
+          font-size: 5vw;
+        }
       }
     }
   }

@@ -6,10 +6,11 @@
   max-width: 75rem;
   margin: 0 auto;
   align-items: center;
-  padding: 0 0.5rem;
+  padding: 0 2rem;
   overflow: hidden;
-  gap: 2rem;
-  @media screen and (max-width: 680px) {
+  gap: 1rem;
+  @media screen and (max-width: 720px) {
+    padding: 0 1rem;
     flex-direction: column;
   }
   .skillBars {
@@ -20,6 +21,7 @@
     width: 100vw;
     text-align: center;
     margin: 0 auto;
+    // padding-left: 2rem;
 
     @media screen and (max-width: 770px) {
       max-width: 85%;
@@ -37,7 +39,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 1rem;
-      padding-right: 0 rem;
+      // padding-right: 0 rem;
     }
 
     .process {
@@ -51,13 +53,13 @@
       box-sizing: border-box;
       border: 1.5px solid $color-border-dark;
       border-radius: 0.5rem;
-      @media screen and (max-width: 1030px) {
+      @media screen and (max-width: 1070px) {
         width: 13rem;
       }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 946px) {
         width: 11rem;
       }
-      @media screen and (max-width: 770px) {
+      @media screen and (max-width: 818px) {
         width: 100%;
       }
     }

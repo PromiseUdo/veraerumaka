@@ -50,7 +50,7 @@ const ProjectCard = ({ ref, imgUrl, title, link, description }) => {
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          // backgroundPosition: "center",
         }}
         className={styles.cardInner}
       >

@@ -68,7 +68,7 @@
     flex-direction: column;
     @media screen and (max-width: 1000px) {
       align-items: center;
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     @media screen and (max-width: 720px) {
       align-items: flex-start;
@@ -88,6 +88,12 @@
         color: yellow;
         background: transparent;
       }
+      @media screen and (max-width: 1000px) {
+        text-align: center;
+      }
+      @media screen and (max-width: 720px) {
+        text-align: left;
+      }
     }
 
     .introPara {
@@ -96,6 +102,12 @@
       color: $color-gray-100;
       letter-spacing: 1px;
       margin-bottom: 1.6rem;
+      @media screen and (max-width: 1000px) {
+        text-align: center;
+      }
+      @media screen and (max-width: 720px) {
+        text-align: left;
+      }
     }
 
     .actions {

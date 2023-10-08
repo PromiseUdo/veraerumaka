@@ -6,12 +6,12 @@ import {
 } from "./components/GradientCircle";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
 import Works from "./components/Works";
 import "./app.scss";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import Experience from "./components/Experience";
+import About from "./components/About";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <GradientCircleTop />
         <GradientCircleMd />
         <Intro />
-        <Skills />
+        <About />
         <Works />
         <Experience />
         <Contact />

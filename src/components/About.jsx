@@ -1,4 +1,4 @@
-import styles from "../styles/Skills.module.scss";
+import styles from "../styles/About.module.scss";
 import Section from "./Section";
 import UIDesign from "../assets/ui-design.png";
 import WebDesign from "../assets/website-design.png";
@@ -6,7 +6,7 @@ import AppDesign from "../assets/app-design.png";
 import Training from "../assets/training.png";
 import { motion } from "framer-motion";
 import { useRef } from "react";
-const Skills = () => {
+const About = () => {
   const scrollRef = useRef(null);
 
   return (
@@ -170,4 +170,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default About;

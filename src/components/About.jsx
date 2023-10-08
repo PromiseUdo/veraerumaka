@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 const About = () => {
   const scrollRef = useRef(null);
-
+  const processMotion = {
+    rest: { scale: 1, ease: "easeOut", duration: 0.2, type: "tween" },
+    hover: {
+      scale: 1.02,
+    },
+  };
   return (
     <Section
       ref={scrollRef}
@@ -53,11 +58,13 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
+              whileHover="hover"
+              animate="rest"
               className={styles.process}
             >
               <motion.p
                 className={styles.skillBarText}
-                whileHover={{ scale: 1.01 }}
+                variants={processMotion}
               >
                 Understand
               </motion.p>
@@ -67,11 +74,13 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
+              whileHover="hover"
+              animate="rest"
               className={styles.process}
             >
               <motion.p
                 className={styles.skillBarText}
-                whileHover={{ scale: 1.01 }}
+                variants={processMotion}
               >
                 UX Research
               </motion.p>
@@ -81,11 +90,13 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
+              whileHover="hover"
+              animate="rest"
               className={styles.process}
             >
               <motion.p
                 className={styles.skillBarText}
-                whileHover={{ scale: 1.01 }}
+                variants={processMotion}
               >
                 Analyze
               </motion.p>
@@ -95,11 +106,13 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
+              whileHover="hover"
+              animate="rest"
               className={styles.process}
             >
               <motion.p
                 className={styles.skillBarText}
-                whileHover={{ scale: 1.01 }}
+                variants={processMotion}
               >
                 Prototype
               </motion.p>
@@ -109,11 +122,13 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
+              whileHover="hover"
+              animate="rest"
               className={styles.process}
             >
               <motion.p
                 className={styles.skillBarText}
-                whileHover={{ scale: 1.01 }}
+                variants={processMotion}
               >
                 Testing/Validation
               </motion.p>
@@ -123,11 +138,13 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ root: scrollRef }}
+              whileHover="hover"
+              animate="rest"
               className={styles.process}
             >
               <motion.p
                 className={styles.skillBarText}
-                whileHover={{ scale: 1.01 }}
+                variants={processMotion}
               >
                 Hand Over
               </motion.p>

@@ -34,9 +34,8 @@ const Intro = () => {
           />
         </span>
         <p className={styles.introPara}>
-          I specialize in UI and UX design. With experience in creating <br />
-          visually appealing and intuitive design to deliver outstanding
-          results.
+          I specialize in UI and UX design. With experience in creating
+          intuitive design to deliver outstanding results.
         </p>
 
         <div className={styles.actions}>

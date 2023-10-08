@@ -105,6 +105,9 @@
   // border: 1px solid $color-gray-200;
   border-radius: 0.5rem;
 
+  @media screen and (max-width: 1024px) {
+    width: 22rem;
+  }
   @media screen and (max-width: 770px) {
     width: 23rem;
   }

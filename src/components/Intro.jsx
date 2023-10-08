@@ -59,15 +59,17 @@ const Intro = () => {
           </a>
         </div>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        className={styles.illustration}
-      >
-        <img src={bg} alt="profile picture" className={styles.bg} />
-        <span className={styles.circleSpin}></span>
-      </motion.div>
+      <div className={styles.illustrationContainer}>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className={styles.illustration}
+        >
+          <img src={bg} alt="profile picture" className={styles.bg} />
+          <span className={styles.circleSpin}></span>
+        </motion.div>
+      </div>
     </Section>
   );
 };

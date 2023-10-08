@@ -5,57 +5,67 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
   overflow: hidden;
+  // padding-top: 0rem !important;
   @media screen and (max-width: 1000px) {
     flex-direction: column-reverse;
     gap: 0rem;
   }
 
-  .illustration {
-    position: relative;
-    border-radius: 50%;
-    display: flex;
+  .illustrationContainer {
     height: 20rem;
-    width: 20rem;
+    width: 100%;
+    // background-color: green;
+    display: flex;
     justify-content: center;
     align-items: center;
-
-    .bg {
-      width: 20rem;
-      height: auto;
-      object-fit: contain;
+    .illustration {
+      position: relative;
       border-radius: 50%;
+      // background-color: green;
+      display: flex;
+      height: 20rem;
+      width: 20rem;
+      justify-content: center;
+      align-items: center;
 
-      border: 0.1rem solid yellow;
+      .bg {
+        width: 20rem;
+        height: auto;
+        object-fit: contain;
+        border-radius: 50%;
 
+        border: 0.1rem solid yellow;
+
+        @media screen and (max-width: 840px) {
+          width: 15rem;
+        }
+        @media screen and (max-width: 480px) {
+          width: 13rem;
+        }
+      }
+      .circleSpin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border-top: 0.1rem solid $color-pink;
+        border-bottom: 0.1rem solid $color-tertiary;
+        border-left: 0.1rem solid $color-secondary;
+        border-right: 0.1rem solid $color-primary;
+      }
       @media screen and (max-width: 840px) {
         width: 15rem;
+        height: 15rem;
       }
       @media screen and (max-width: 480px) {
         width: 13rem;
+        height: 13rem;
       }
-    }
-    .circleSpin {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(0);
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      border-top: 0.1rem solid $color-pink;
-      border-bottom: 0.1rem solid $color-tertiary;
-      border-left: 0.1rem solid $color-secondary;
-      border-right: 0.1rem solid $color-primary;
-    }
-    @media screen and (max-width: 840px) {
-      width: 15rem;
-      height: 15rem;
-    }
-    @media screen and (max-width: 480px) {
-      width: 13rem;
-      height: 13rem;
     }
   }
 
@@ -65,10 +75,13 @@
     font-size: 3rem;
     font-weight: 700;
     display: flex;
+    // background-color: brown;
+    // max-width: 50%;
     flex-direction: column;
     @media screen and (max-width: 1000px) {
       align-items: center;
       font-size: 2.5rem;
+      padding: 0.5rem 2rem;
     }
     @media screen and (max-width: 720px) {
       align-items: flex-start;
@@ -78,6 +91,9 @@
     .hello {
       font-size: 1.75rem;
       font-weight: 100;
+      @media screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+      }
       @media screen and (max-width: 720px) {
         font-size: 1rem;
       }
@@ -97,6 +113,7 @@
     }
 
     .introPara {
+      max-width: 35rem;
       font-size: medium;
       font-weight: 300;
       color: $color-gray-100;

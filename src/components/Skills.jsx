@@ -99,53 +99,21 @@ const Skills = () => {
             viewport={{ root: scrollRef }}
             className={styles.process}
           >
-            {/* <img
-            className={styles.skillBarImg}
-            src={WebDesign}
-            alt="web design"
-          /> */}
             <div className={styles.skillBarText}>
-              {/* <h2>Website Design</h2> */}
               <p>Understand</p>
             </div>
           </motion.div>
-          {/* <motion.div
-          initial={{ opacity: 0, y: 10, scale: 0.9 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.5 }} // drag="x"
-          viewport={{ root: scrollRef }}
-          className={styles.skillBar}
-        >
-          <img
-            className={styles.skillBarImg}
-            src={AppDesign}
-            alt="app design"
-          />
-          <div className={styles.skillBarText}>
-            <h2>Mobile App Design</h2>
-            <p>
-              I have experience in crafting user-friendly and visually appealing
-              mobile interfaces that captivate and engage users.
-            </p>
-          </div>
-        </motion.div> */}
-          {/* <motion.div
-          initial={{ opacity: 0, y: 10, scale: 0.9 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.5 }} // drag="x"
-          viewport={{ root: scrollRef }}
-          className={styles.skillBar}
-        >
-          <img className={styles.skillBarImg} src={Training} alt="app design" />
-          <div className={styles.skillBarText}>
-            <h2>Training</h2>
-            <p>
-              I leverage my experience to guide aspiring designers through the
-              intricacies of UI/UX Design. Equipping them with tools and
-              knowledge to excel.
-            </p>
-          </div>
-        </motion.div> */}
+          <motion.div
+            initial={{ opacity: 0, y: 10, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.5 }} // drag="x"
+            viewport={{ root: scrollRef }}
+            className={styles.process}
+          >
+            <div className={styles.skillBarText}>
+              <p>Understand</p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </Section>

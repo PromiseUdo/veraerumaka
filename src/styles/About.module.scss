@@ -64,6 +64,7 @@
     .skillBar {
       display: flex;
       text-align: left;
+      flex-direction: column;
       padding: 1.5rem 2rem;
       background: $color-gray-200;
       border-radius: 0.5rem;
@@ -82,15 +83,10 @@
         }
       }
 
-      .skillBarText > p {
+      .skillBarText {
         font-size: 1rem;
         font-weight: 200;
         margin: 1rem 0;
-      }
-      .skillBarText > h2 {
-        @media screen and (max-width: 480px) {
-          font-size: 5vw;
-        }
       }
     }
   }

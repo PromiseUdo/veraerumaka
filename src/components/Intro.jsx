@@ -3,7 +3,6 @@ import Section from "./Section";
 import bg from "../assets/vera.png";
 import btnImg from "../assets/hireme.png";
 import DownloadIcon from "../assets/download.png";
-import SuitcaseIcon from "../assets/suitcase.png";
 import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";

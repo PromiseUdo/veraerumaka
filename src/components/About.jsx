@@ -16,7 +16,7 @@ const About = () => {
       className={styles.skills}
       title="Learn More About Me"
       subtitle="About Me"
-      description="A sneak peek into who I am."
+      description="A sneak peek into who I am"
       id="skills"
     >
       <div className={styles.container}>

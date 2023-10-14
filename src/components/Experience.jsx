@@ -83,7 +83,7 @@ const ResumeItem = ({
       className={styles.resumeItem}
     >
       <h4>
-        <span>{job_title}</span>
+        <span className={styles.jobTitle}>{job_title}</span>
         <span className={styles.jobType}>
           <FaMapMarkerAlt /> <span> {job_type}</span>
         </span>

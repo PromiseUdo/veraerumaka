@@ -29,10 +29,10 @@ const About = () => {
             className={styles.skillBar}
           >
             <p className={styles.skillBarText}>
-              I am currently a product designer at Aceplora and I take quarterly
-              bootcamp trainings. I&apos;ve mentored and trained designers to
-              see beyond the tools and deliver easy and enjoyable products that
-              solves real problems.
+              I am currently a product designer at Luxpay where I design Fintech
+              applications that give enjoyable user experience. I&apos;ve
+              mentored and trained designers to see beyond the tools and deliver
+              easy and enjoyable products that solves real problems.
             </p>
             <p className={styles.skillBarText}>
               When I&apos;m not designing, I am either seeing a movie, hitting

@@ -43,19 +43,19 @@ const work_experience = [
     ],
     job_type: "On-site",
   },
-  {
-    id: 3,
-    job_title: "UI/UX Designer",
-    company_name: "TechKraft Inc",
-    duration: "Oct 2022 - Mar 2023",
-    city: "Imo",
-    descriptions: [
-      "Designed UI elements adhering to style standards and typography of the app.",
-      "Tested UI elements after developments.",
-      "Collaborated with other designers to produce high-quality UX designs.",
-    ],
-    job_type: "Remote",
-  },
+  // {
+  //   id: 3,
+  //   job_title: "UI/UX Designer",
+  //   company_name: "TechKraft Inc",
+  //   duration: "Oct 2022 - Mar 2023",
+  //   city: "Imo",
+  //   descriptions: [
+  //     "Designed UI elements adhering to style standards and typography of the app.",
+  //     "Tested UI elements after developments.",
+  //     "Collaborated with other designers to produce high-quality UX designs.",
+  //   ],
+  //   job_type: "Remote",
+  // },
   {
     id: 3,
     job_title: "UI/UX Designer",

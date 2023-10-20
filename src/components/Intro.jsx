@@ -50,7 +50,7 @@ const Intro = () => {
               <span> Hire Me</span>
             </motion.button>
           </Link>
-          <a href="/resume/vera_erumaka_cv.pdf" download>
+          <a href="/resume/Erumaka_Vera_Uchenna_Resume.pdf" download>
             <motion.button whileTap={{ scale: 0.85 }} className={styles.resume}>
               <img className={styles.btnImg} src={DownloadIcon} alt="hire me" />
               <span> Download CV</span>

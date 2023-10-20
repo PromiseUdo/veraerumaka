@@ -6,9 +6,22 @@ import { useEffect, useRef } from "react";
 const work_experience = [
   {
     id: 1,
-    job_title: "Design Instructor",
+    job_title: "Product Designer",
+    company_name: "Luxpay",
+    duration: "October 2023 - Present",
+    city: "Lagos",
+    descriptions: [
+      "Collaborated with a team of developers and designers to build a fully-functional Fintech application",
+      "Collaborated with a team of developers to build a fully functional crypto bank application",
+      "Continuous iteration and refinement of product design to ensure crypto bank’s digital products promoted trust, security and efficiency in transaction",
+    ],
+    job_type: "remote",
+  },
+  {
+    id: 1,
+    job_title: "Bootcamp Instructor",
     company_name: "Aceplora",
-    duration: "Aug 2023 - Present",
+    duration: "Aug 2023 - October 2023",
     city: "Port Harcourt",
     descriptions: [
       "Coached students on User Interface design adhering to the curriculum.",

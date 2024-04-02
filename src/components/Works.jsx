@@ -24,16 +24,16 @@ const projectsData = [
   },
   {
     id: 3,
-    link: "https://www.behance.net/gallery/166513147/Bank-application-for-mobile-device",
-    title: "ARLBank Mobile App",
+    link: "https://www.behance.net/gallery/191875595/Swiftsend-Fintech-app",
+    title: "Swiftsend Fintech App",
     description: "Bank Application",
     image: Portfolio3,
   },
   {
     id: 4,
-    link: "https://www.behance.net/gallery/178472589/Event-Management-Application?tracking_source=project_owner_other_projects",
-    title: "Credib Mobile App",
-    description: "Event Planning App",
+    link: "https://www.behance.net/gallery/188025961/logistics-design-for-mobile",
+    title: "Logistics App Design",
+    description: "Logistics App",
     image: Portfolio4,
   },
 ];

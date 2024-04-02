@@ -29,19 +29,21 @@ const About = () => {
             className={styles.skillBar}
           >
             <p className={styles.skillBarText}>
-              I am currently a product designer at Luxpay where I design Fintech
-              applications that give enjoyable user experience. I&apos;ve
-              mentored and trained designers to see beyond the tools and deliver
-              easy and enjoyable products that solves real problems.
+              My name is Erumaka Uchenna Vera.🥳An experienced UI/UX and
+              Graphics Designer, I specialize in creating immersive user
+              experiences,Interface and captivating visual identities that make
+              a lasting impact.
             </p>
             <p className={styles.skillBarText}>
-              When I&apos;m not designing, I am either seeing a movie, hitting
-              the gym or simply being awesome. &#128513;
+              With a full range of services, I offer expertise in user
+              experience research, information architecture, interactive
+              prototyping, wireframing, and usability testing etc to ensure
+              seamless navigation and optimal engagement.🌟
             </p>
 
             <p className={styles.skillBarText}>
-              I am open to both full-time remote and contract roles. Feel free
-              to reach out to me to bring your ideas into life.
+              Let's collaborate to elevate your brand and achieve your goals
+              together! 👩‍💼🌟
             </p>
           </motion.div>
         </div>
